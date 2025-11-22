@@ -29,11 +29,9 @@ namespace OnlineOrdering
             return _isUsaAddress; 
         }
 
-        public void GetFullAddress()
+        public string GetFullAddress()
         {
-            Console.WriteLine($"{ _street}");
-            Console.WriteLine($"{ _city}, { _state}");
-            Console.WriteLine($"{ _country}");
+            return $"{_street}\n{_city}, {_state}, {_country}";
         }
     }
 
